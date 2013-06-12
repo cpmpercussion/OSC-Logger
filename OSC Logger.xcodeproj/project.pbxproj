@@ -17,6 +17,12 @@
 		560BCB9E1767FFFA00F7DF2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560BCB7E1767FFFA00F7DF2F /* Cocoa.framework */; };
 		560BCBA61767FFFA00F7DF2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 560BCBA41767FFFA00F7DF2F /* InfoPlist.strings */; };
 		560BCBA91767FFFA00F7DF2F /* OSC_LoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BCBA81767FFFA00F7DF2F /* OSC_LoggerTests.m */; };
+		560BCBB31768004700F7DF2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 560BCBB21768004700F7DF2F /* README.md */; };
+		560BCBB51768004C00F7DF2F /* OSCLoggerIcons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 560BCBB41768004C00F7DF2F /* OSCLoggerIcons.icns */; };
+		560BCBBE1768010F00F7DF2F /* OSCLoggerClientsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BCBBD1768010F00F7DF2F /* OSCLoggerClientsList.m */; };
+		560BCBBF1768010F00F7DF2F /* OSCLoggerClientsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BCBBD1768010F00F7DF2F /* OSCLoggerClientsList.m */; };
+		560BCBCF17681E0700F7DF2F /* CocoaOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560BCBCA17681DB700F7DF2F /* CocoaOSC.framework */; };
+		560BCBD117681E2000F7DF2F /* CocoaOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 560BCBCA17681DB700F7DF2F /* CocoaOSC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +33,48 @@
 			remoteGlobalIDString = 560BCB7A1767FFFA00F7DF2F;
 			remoteInfo = "OSC Logger";
 		};
+		560BCBC717681DB700F7DF2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 560BCBC017681DB700F7DF2F /* CocoaOSC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B5068C51460E41500BD27ED;
+			remoteInfo = "CocoaOSC-ios";
+		};
+		560BCBC917681DB700F7DF2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 560BCBC017681DB700F7DF2F /* CocoaOSC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B4C46841460E8B9007B5E06;
+			remoteInfo = "CocoaOSC-mac";
+		};
+		560BCBCB17681DB700F7DF2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 560BCBC017681DB700F7DF2F /* CocoaOSC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B4C46C51460EAAF007B5E06;
+			remoteInfo = "CocoaOSCDemo-ios";
+		};
+		560BCBCD17681DB700F7DF2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 560BCBC017681DB700F7DF2F /* CocoaOSC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0B4C46E41460EC07007B5E06;
+			remoteInfo = "CocoaOSCDemo-mac";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		560BCBD017681E1200F7DF2F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				560BCBD117681E2000F7DF2F /* CocoaOSC.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		560BCB7B1767FFFA00F7DF2F /* OSC Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSC Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +96,13 @@
 		560BCBA51767FFFA00F7DF2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		560BCBA71767FFFA00F7DF2F /* OSC_LoggerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_LoggerTests.h; sourceTree = "<group>"; };
 		560BCBA81767FFFA00F7DF2F /* OSC_LoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSC_LoggerTests.m; sourceTree = "<group>"; };
+		560BCBB21768004700F7DF2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		560BCBB41768004C00F7DF2F /* OSCLoggerIcons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = OSCLoggerIcons.icns; sourceTree = "<group>"; };
+		560BCBBC1768010E00F7DF2F /* OSCLoggerClientsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCLoggerClientsList.h; sourceTree = "<group>"; };
+		560BCBBD1768010F00F7DF2F /* OSCLoggerClientsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCLoggerClientsList.m; sourceTree = "<group>"; };
+		560BCBC017681DB700F7DF2F /* CocoaOSC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaOSC.xcodeproj; path = ../CocoaOSC/CocoaOSC.xcodeproj; sourceTree = "<group>"; };
+		560BCBD517682D8600F7DF2F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		560BCBD617682E0C00F7DF2F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560BCBCF17681E0700F7DF2F /* CocoaOSC.framework in Frameworks */,
 				560BCB7F1767FFFA00F7DF2F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,10 +130,14 @@
 		560BCB721767FFFA00F7DF2F = {
 			isa = PBXGroup;
 			children = (
+				560BCBD517682D8600F7DF2F /* .gitignore */,
+				560BCBD617682E0C00F7DF2F /* LICENSE.md */,
+				560BCBB41768004C00F7DF2F /* OSCLoggerIcons.icns */,
 				560BCB841767FFFA00F7DF2F /* OSC Logger */,
 				560BCBA11767FFFA00F7DF2F /* OSC LoggerTests */,
 				560BCB7D1767FFFA00F7DF2F /* Frameworks */,
 				560BCB7C1767FFFA00F7DF2F /* Products */,
+				560BCBC017681DB700F7DF2F /* CocoaOSC.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +173,9 @@
 		560BCB841767FFFA00F7DF2F /* OSC Logger */ = {
 			isa = PBXGroup;
 			children = (
+				560BCBB21768004700F7DF2F /* README.md */,
+				560BCBBC1768010E00F7DF2F /* OSCLoggerClientsList.h */,
+				560BCBBD1768010F00F7DF2F /* OSCLoggerClientsList.m */,
 				560BCB901767FFFA00F7DF2F /* OSCLoggerAppDelegate.h */,
 				560BCB911767FFFA00F7DF2F /* OSCLoggerAppDelegate.m */,
 				560BCB931767FFFA00F7DF2F /* MainMenu.xib */,
@@ -153,6 +215,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		560BCBC117681DB700F7DF2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				560BCBC817681DB700F7DF2F /* libCocoaOSC.a */,
+				560BCBCA17681DB700F7DF2F /* CocoaOSC.framework */,
+				560BCBCC17681DB700F7DF2F /* CocoaOSCios.app */,
+				560BCBCE17681DB700F7DF2F /* CocoaOSCmac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +236,7 @@
 				560BCB771767FFFA00F7DF2F /* Sources */,
 				560BCB781767FFFA00F7DF2F /* Frameworks */,
 				560BCB791767FFFA00F7DF2F /* Resources */,
+				560BCBD017681E1200F7DF2F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -212,6 +286,12 @@
 			mainGroup = 560BCB721767FFFA00F7DF2F;
 			productRefGroup = 560BCB7C1767FFFA00F7DF2F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 560BCBC117681DB700F7DF2F /* Products */;
+					ProjectRef = 560BCBC017681DB700F7DF2F /* CocoaOSC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				560BCB7A1767FFFA00F7DF2F /* OSC Logger */,
@@ -219,6 +299,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		560BCBC817681DB700F7DF2F /* libCocoaOSC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaOSC.a;
+			remoteRef = 560BCBC717681DB700F7DF2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		560BCBCA17681DB700F7DF2F /* CocoaOSC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaOSC.framework;
+			remoteRef = 560BCBC917681DB700F7DF2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		560BCBCC17681DB700F7DF2F /* CocoaOSCios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CocoaOSCios.app;
+			remoteRef = 560BCBCB17681DB700F7DF2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		560BCBCE17681DB700F7DF2F /* CocoaOSCmac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CocoaOSCmac.app;
+			remoteRef = 560BCBCD17681DB700F7DF2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		560BCB791767FFFA00F7DF2F /* Resources */ = {
@@ -228,6 +339,8 @@
 				560BCB891767FFFA00F7DF2F /* InfoPlist.strings in Resources */,
 				560BCB8F1767FFFA00F7DF2F /* Credits.rtf in Resources */,
 				560BCB951767FFFA00F7DF2F /* MainMenu.xib in Resources */,
+				560BCBB31768004700F7DF2F /* README.md in Resources */,
+				560BCBB51768004C00F7DF2F /* OSCLoggerIcons.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +377,7 @@
 			files = (
 				560BCB8B1767FFFA00F7DF2F /* main.m in Sources */,
 				560BCB921767FFFA00F7DF2F /* OSCLoggerAppDelegate.m in Sources */,
+				560BCBBE1768010F00F7DF2F /* OSCLoggerClientsList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				560BCBA91767FFFA00F7DF2F /* OSC_LoggerTests.m in Sources */,
+				560BCBBF1768010F00F7DF2F /* OSCLoggerClientsList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +503,7 @@
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
 				INFOPLIST_FILE = "OSC Logger/OSC Logger-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../CocoaOSC/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,6 +516,7 @@
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
 				INFOPLIST_FILE = "OSC Logger/OSC Logger-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../CocoaOSC/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
