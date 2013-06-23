@@ -570,6 +570,7 @@
 				560BCBAE1767FFFA00F7DF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		560BCBAF1767FFFA00F7DF2F /* Build configuration list for PBXNativeTarget "OSC LoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +579,7 @@
 				560BCBB11767FFFA00F7DF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
