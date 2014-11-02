@@ -56,7 +56,7 @@
     
     NSString *filePath = [NSString stringWithFormat:@"%@/%@.txt",documentsDirectory,fileName];
     
-    NSLog(filePath);
+    NSLog(@"File %@",filePath);
     
     self.fileManager = [NSFileManager defaultManager];
     [self.fileManager createFileAtPath:filePath contents:nil attributes:nil];
@@ -86,13 +86,20 @@
         NSLog(@"Client List still current.");
     }
     
-    // display the packet
-    NSString *loggedPacket = [NSString stringWithFormat:@"%f, %@, %@\n",[self.initialTime timeIntervalSinceNow] * -1, host,[packet description]];
-    [self.lastMessageField setStringValue:loggedPacket];
-    // save the packet to the log.
-    [self.fileHandle seekToEndOfFile];
-    [self.fileHandle writeData:[loggedPacket dataUsingEncoding:NSASCIIStringEncoding]];
-    
+    if (![packet.address isEqualToString:@"/metatone/acceleration"]) {
+        // display the packet
+        NSString *loggedPacket = [NSString stringWithFormat:@"%f, %@, %@\n",[self.initialTime timeIntervalSinceNow] * -1, host,[packet description]];
+        loggedPacket = [loggedPacket stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        loggedPacket = [loggedPacket stringByReplacingOccurrencesOfString:@"OSCMutableMessage" withString:@""];
+        loggedPacket = [loggedPacket stringByReplacingOccurrencesOfString:@"    " withString:@" "];
+        loggedPacket = [loggedPacket stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+        loggedPacket = [loggedPacket stringByAppendingString:@"\n"];
+        [self.lastMessageField setStringValue:loggedPacket];
+        // save the packet to the log.
+ 
+        [self.fileHandle seekToEndOfFile];
+        [self.fileHandle writeData:[loggedPacket dataUsingEncoding:NSASCIIStringEncoding]];
+    }
 }
 
 @end
