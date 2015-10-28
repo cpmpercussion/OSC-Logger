@@ -16,33 +16,25 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    connection = [[OSCConnection alloc] init];
-    connection.delegate = self;
-    connection.continuouslyReceivePackets = YES;
+    self.connection = [[F53OSCServer alloc] init];
     
-    NSError *error;
+    [self.connection setDelegate:self];
+    [self.connection setPort:PORT];
+    [self.connection startListening];
     
-    if (![connection bindToAddress:nil port:PORT error:&error])
-    {
-        // do something with the error
-        NSLog(@"Failed to bind connection");
+    NSLog(@"Bound Connection");
+    // register with Bonjour
+    self.netService = [[NSNetService alloc]
+                       initWithDomain:@""
+                       type:@"_osclogger._udp"
+                       name:[NSString stringWithFormat:@"%@'s OSC Logger", NSFullUserName()]
+                       port:PORT];
+    if (self.netService != nil) {
+        [self.netService setDelegate: self];
+        [self.netService publishWithOptions:0];
+        NSLog(@"NetService Published.");
     }
-    [connection receivePacket];
-    // Connection ready.
-    if (error == nil) {
-        NSLog(@"Bound Connection");
-        // register with Bonjour
-        self.netService = [[NSNetService alloc]
-                           initWithDomain:@""
-                           type:@"_osclogger._udp"
-                           name:[NSString stringWithFormat:@"%@'s OSC Logger", NSFullUserName()]
-                           port:PORT];
-        if (self.netService != nil) {
-            [self.netService setDelegate: self];
-            [self.netService publishWithOptions:0];
-            NSLog(@"NetService Published.");
-        }
-    }
+
     
     // Init some logging objects
     self.initialTime = [[NSDate alloc] init];
@@ -64,31 +56,24 @@
 }
 
 -(void)applicationWillTerminate:(NSNotification *)notification {
-    [connection disconnect];
-    connection = nil;
+    [self.connection stopListening];
     [self.fileHandle closeFile];
     NSLog(@"Cleaning up.");
 }
 
 #pragma mark - OSC Delegate Methods
-
-- (void)oscConnection:(OSCConnection *)connection didReceivePacket:(OSCPacket *)packet {
-    // save the packet
-    //NSLog ([packet description]);
-}
-
-- (void)oscConnection:(OSCConnection *)connection didReceivePacket:(OSCPacket *)packet fromHost:(NSString *)host port:(UInt16)port {
+- (void)takeMessage:(F53OSCMessage *)message {
     // Record connected client details
-    if ([self.clientsList addClient:host]) {
+    if ([self.clientsList addClient:message.replySocket.host]) {
         [self.connectedClientList setStringValue:[self.clientsList asString]];
         NSLog(@"Updated Client List");
     } else {
         NSLog(@"Client List still current.");
     }
     
-    if (![packet.address isEqualToString:@"/metatone/acceleration"]) {
+    if (![message.addressPattern isEqualToString:@"/metatone/acceleration"]) {
         // display the packet
-        NSString *loggedPacket = [NSString stringWithFormat:@"%f, %@, %@\n",[self.initialTime timeIntervalSinceNow] * -1, host,[packet description]];
+        NSString *loggedPacket = [NSString stringWithFormat:@"%f, %@, %@\n",[self.initialTime timeIntervalSinceNow] * -1, message.replySocket.host,[message description]];
         loggedPacket = [loggedPacket stringByReplacingOccurrencesOfString:@"\n" withString:@""];
         loggedPacket = [loggedPacket stringByReplacingOccurrencesOfString:@"OSCMutableMessage" withString:@""];
         loggedPacket = [loggedPacket stringByReplacingOccurrencesOfString:@"    " withString:@" "];

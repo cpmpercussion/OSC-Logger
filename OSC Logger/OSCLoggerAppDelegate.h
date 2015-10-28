@@ -7,17 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
-//#import "CocoaOSC.h"
+#import "F53OSC.h"
 #import "OSCLoggerClientsList.h"
 
 
-@interface OSCLoggerAppDelegate : NSObject <NSApplicationDelegate, OSCConnectionDelegate> {
-    OSCConnection *connection;
+@interface OSCLoggerAppDelegate : NSObject <NSApplicationDelegate, F53OSCPacketDestination, NSNetServiceDelegate> {
 }
 
-
+@property (strong,nonatomic) F53OSCServer *connection;
 @property (assign) IBOutlet NSWindow *window;
-
 @property NSNetService *netService;
 @property (weak) IBOutlet NSTextField *connectedClientList;
 @property (weak) IBOutlet NSTextField *lastMessageField;
