@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8B3D6D62AD8E20595A6F37FEF57161EECF1C3738",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8B3D6D62AD8E20595A6F37FEF57161EECF1C3738" : 0,
+    "8290155778CD077C9D8A85EC03BEA069395BD6EA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E55F1AA8-039E-4D34-96CD-7EDD71BDC39D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8B3D6D62AD8E20595A6F37FEF57161EECF1C3738" : "OSC%20Logger",
+    "8290155778CD077C9D8A85EC03BEA069395BD6EA" : "OSC-Logger\/MetatoneOSC"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OSC Logger",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OSC Logger.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpmpercussion\/MetatoneOSC",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8290155778CD077C9D8A85EC03BEA069395BD6EA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cpmpercussion\/OSC-Logger.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B3D6D62AD8E20595A6F37FEF57161EECF1C3738"
+    }
+  ]
+}
