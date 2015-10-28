@@ -18,7 +18,6 @@
 		5603DA5D1A0649E5002A9364 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5603DA461A0649E5002A9364 /* GCDAsyncSocket.m */; };
 		5603DA5E1A0649E5002A9364 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5603DA481A0649E5002A9364 /* GCDAsyncUdpSocket.m */; };
 		5603DA5F1A0649E5002A9364 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5603DA491A0649E5002A9364 /* LICENSE.txt */; };
-		5603DA601A0649E5002A9364 /* MetatoneNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5603DA4B1A0649E5002A9364 /* MetatoneNetworkManager.m */; };
 		5603DA611A0649E5002A9364 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 5603DA4D1A0649E5002A9364 /* NSData+F53OSCBlob.m */; };
 		5603DA621A0649E5002A9364 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 5603DA4F1A0649E5002A9364 /* NSDate+F53OSCTimeTag.m */; };
 		5603DA631A0649E5002A9364 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 5603DA511A0649E5002A9364 /* NSNumber+F53OSCNumber.m */; };
@@ -403,7 +402,6 @@
 				560BCB921767FFFA00F7DF2F /* OSCLoggerAppDelegate.m in Sources */,
 				5603DA621A0649E5002A9364 /* NSDate+F53OSCTimeTag.m in Sources */,
 				5603DA551A0649E5002A9364 /* F53OSCBundle.m in Sources */,
-				5603DA601A0649E5002A9364 /* MetatoneNetworkManager.m in Sources */,
 				5603DA561A0649E5002A9364 /* F53OSCClient.m in Sources */,
 				5603DA571A0649E5002A9364 /* F53OSCMessage.m in Sources */,
 				5603DA5E1A0649E5002A9364 /* GCDAsyncUdpSocket.m in Sources */,
