@@ -323,7 +323,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = OSCLogger;
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Charles Martin";
 			};
 			buildConfigurationList = 560BCB761767FFFA00F7DF2F /* Build configuration list for PBXProject "OSC Logger" */;
@@ -470,7 +471,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -480,6 +480,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -503,7 +504,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -532,6 +532,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
 				INFOPLIST_FILE = "OSC Logger/OSC Logger-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../CocoaOSC/**";
 				WRAPPER_EXTENSION = app;
@@ -545,6 +546,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
 				INFOPLIST_FILE = "OSC Logger/OSC Logger-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../CocoaOSC/**";
 				WRAPPER_EXTENSION = app;
@@ -560,6 +562,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
 				INFOPLIST_FILE = "OSC LoggerTests/OSC LoggerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -575,6 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
 				INFOPLIST_FILE = "OSC LoggerTests/OSC LoggerTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

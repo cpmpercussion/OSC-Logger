@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "CocoaOSC.h"
+//#import "CocoaOSC.h"
 #import "OSCLoggerClientsList.h"
 
 

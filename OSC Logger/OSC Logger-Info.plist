@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>OSCLoggerIcons</string>
 	<key>CFBundleIdentifier</key>
-	<string>au.com.charlesmartin.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
