@@ -29,25 +29,11 @@
 		560BCB8F1767FFFA00F7DF2F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 560BCB8D1767FFFA00F7DF2F /* Credits.rtf */; };
 		560BCB921767FFFA00F7DF2F /* OSCLoggerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BCB911767FFFA00F7DF2F /* OSCLoggerAppDelegate.m */; };
 		560BCB951767FFFA00F7DF2F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 560BCB931767FFFA00F7DF2F /* MainMenu.xib */; };
-		560BCB9D1767FFFA00F7DF2F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560BCB9C1767FFFA00F7DF2F /* SenTestingKit.framework */; };
-		560BCB9E1767FFFA00F7DF2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560BCB7E1767FFFA00F7DF2F /* Cocoa.framework */; };
-		560BCBA61767FFFA00F7DF2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 560BCBA41767FFFA00F7DF2F /* InfoPlist.strings */; };
-		560BCBA91767FFFA00F7DF2F /* OSC_LoggerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BCBA81767FFFA00F7DF2F /* OSC_LoggerTests.m */; };
 		560BCBB31768004700F7DF2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 560BCBB21768004700F7DF2F /* README.md */; };
 		560BCBB51768004C00F7DF2F /* OSCLoggerIcons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 560BCBB41768004C00F7DF2F /* OSCLoggerIcons.icns */; };
 		560BCBBE1768010F00F7DF2F /* OSCLoggerClientsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BCBBD1768010F00F7DF2F /* OSCLoggerClientsList.m */; };
-		560BCBBF1768010F00F7DF2F /* OSCLoggerClientsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 560BCBBD1768010F00F7DF2F /* OSCLoggerClientsList.m */; };
+		5659E43E1CD587B10047FEDE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5659E43D1CD587B10047FEDE /* Security.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		560BCB9F1767FFFA00F7DF2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 560BCB731767FFFA00F7DF2F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 560BCB7A1767FFFA00F7DF2F;
-			remoteInfo = "OSC Logger";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		560BCBD017681E1200F7DF2F /* CopyFiles */ = {
@@ -110,8 +96,6 @@
 		560BCB901767FFFA00F7DF2F /* OSCLoggerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCLoggerAppDelegate.h; sourceTree = "<group>"; };
 		560BCB911767FFFA00F7DF2F /* OSCLoggerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCLoggerAppDelegate.m; sourceTree = "<group>"; };
 		560BCB941767FFFA00F7DF2F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		560BCB9B1767FFFA00F7DF2F /* OSC LoggerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSC LoggerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		560BCB9C1767FFFA00F7DF2F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		560BCBA31767FFFA00F7DF2F /* OSC LoggerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSC LoggerTests-Info.plist"; sourceTree = "<group>"; };
 		560BCBA51767FFFA00F7DF2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		560BCBA71767FFFA00F7DF2F /* OSC_LoggerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC_LoggerTests.h; sourceTree = "<group>"; };
@@ -122,6 +106,7 @@
 		560BCBBD1768010F00F7DF2F /* OSCLoggerClientsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCLoggerClientsList.m; sourceTree = "<group>"; };
 		560BCBD517682D8600F7DF2F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		560BCBD617682E0C00F7DF2F /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		5659E43D1CD587B10047FEDE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,16 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5659E43E1CD587B10047FEDE /* Security.framework in Frameworks */,
 				560BCB7F1767FFFA00F7DF2F /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		560BCB971767FFFA00F7DF2F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				560BCB9D1767FFFA00F7DF2F /* SenTestingKit.framework in Frameworks */,
-				560BCB9E1767FFFA00F7DF2F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				560BCB7B1767FFFA00F7DF2F /* OSC Logger.app */,
-				560BCB9B1767FFFA00F7DF2F /* OSC LoggerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,8 +190,8 @@
 		560BCB7D1767FFFA00F7DF2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5659E43D1CD587B10047FEDE /* Security.framework */,
 				560BCB7E1767FFFA00F7DF2F /* Cocoa.framework */,
-				560BCB9C1767FFFA00F7DF2F /* SenTestingKit.framework */,
 				560BCB801767FFFA00F7DF2F /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -296,25 +272,6 @@
 			productReference = 560BCB7B1767FFFA00F7DF2F /* OSC Logger.app */;
 			productType = "com.apple.product-type.application";
 		};
-		560BCB9A1767FFFA00F7DF2F /* OSC LoggerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 560BCBAF1767FFFA00F7DF2F /* Build configuration list for PBXNativeTarget "OSC LoggerTests" */;
-			buildPhases = (
-				560BCB961767FFFA00F7DF2F /* Sources */,
-				560BCB971767FFFA00F7DF2F /* Frameworks */,
-				560BCB981767FFFA00F7DF2F /* Resources */,
-				560BCB991767FFFA00F7DF2F /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				560BCBA01767FFFA00F7DF2F /* PBXTargetDependency */,
-			);
-			name = "OSC LoggerTests";
-			productName = "OSC LoggerTests";
-			productReference = 560BCB9B1767FFFA00F7DF2F /* OSC LoggerTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -322,9 +279,14 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = OSCLogger;
-				LastTestingUpgradeCheck = 0710;
+				LastTestingUpgradeCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Charles Martin";
+				TargetAttributes = {
+					560BCB7A1767FFFA00F7DF2F = {
+						DevelopmentTeam = EDH387FRHA;
+					};
+				};
 			};
 			buildConfigurationList = 560BCB761767FFFA00F7DF2F /* Build configuration list for PBXProject "OSC Logger" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -339,7 +301,6 @@
 			projectRoot = "";
 			targets = (
 				560BCB7A1767FFFA00F7DF2F /* OSC Logger */,
-				560BCB9A1767FFFA00F7DF2F /* OSC LoggerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -358,31 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560BCB981767FFFA00F7DF2F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				560BCBA61767FFFA00F7DF2F /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		560BCB991767FFFA00F7DF2F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		560BCB771767FFFA00F7DF2F /* Sources */ = {
@@ -410,24 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560BCB961767FFFA00F7DF2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				560BCBA91767FFFA00F7DF2F /* OSC_LoggerTests.m in Sources */,
-				560BCBBF1768010F00F7DF2F /* OSCLoggerClientsList.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		560BCBA01767FFFA00F7DF2F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 560BCB7A1767FFFA00F7DF2F /* OSC Logger */;
-			targetProxy = 560BCB9F1767FFFA00F7DF2F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		560BCB871767FFFA00F7DF2F /* InfoPlist.strings */ = {
@@ -526,6 +446,7 @@
 		560BCBAD1767FFFA00F7DF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
@@ -540,6 +461,7 @@
 		560BCBAE1767FFFA00F7DF2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
@@ -548,38 +470,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "../CocoaOSC/**";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		560BCBB01767FFFA00F7DF2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSC Logger.app/Contents/MacOS/OSC Logger";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
-				INFOPLIST_FILE = "OSC LoggerTests/OSC LoggerTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		560BCBB11767FFFA00F7DF2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSC Logger.app/Contents/MacOS/OSC Logger";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OSC Logger/OSC Logger-Prefix.pch";
-				INFOPLIST_FILE = "OSC LoggerTests/OSC LoggerTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.charlesmartin.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -600,15 +490,6 @@
 			buildConfigurations = (
 				560BCBAD1767FFFA00F7DF2F /* Debug */,
 				560BCBAE1767FFFA00F7DF2F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		560BCBAF1767FFFA00F7DF2F /* Build configuration list for PBXNativeTarget "OSC LoggerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				560BCBB01767FFFA00F7DF2F /* Debug */,
-				560BCBB11767FFFA00F7DF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
