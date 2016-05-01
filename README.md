@@ -1,6 +1,8 @@
 OSC Logger
 ==========
 
+[![DOI](https://zenodo.org/badge/20166/cpmpercussion/OSC-Logger.svg)](https://zenodo.org/badge/latestdoi/20166/cpmpercussion/OSC-Logger)
+
 A simple OS X application for logging OSC messages to a text file in your Documents folder. 
 
 ![A Screenshot of OSC Logger in action.](https://raw.githubusercontent.com/cpmpercussion/OSC-Logger/master/OSC-Logger-OSX.png)
