@@ -5,7 +5,7 @@ A simple OS X application for logging OSC messages to a text file in your Docume
 
 ![A Screenshot of OSC Logger in action.](https://raw.githubusercontent.com/cpmpercussion/OSC-Logger/master/OSC-Logger-OSX.png)
 
-## Features:
+## Features
 
 - Advertises itself as a Bonjour service: `_osclogger._udp.`
 - No configuration - just saves files into your Documents folder.
